@@ -180,8 +180,9 @@ public class MainActivity extends AppCompatActivity {
             }
 
             //Create Path to save Image
-            File path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES+ "/NasaImages"); //Creates app specific folder
+            File path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES+ "/NasaImages");
 
+            //Creates app specific folder
             if(!path.exists()) {
                 path.mkdirs();
             }
