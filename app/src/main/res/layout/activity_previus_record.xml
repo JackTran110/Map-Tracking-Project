@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="8dp"
-    tools:context=".PreviusRecord">
+    tools:context="com.example.finalproject.abraham_mansour.PreviusRecord">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview_images"

@@ -1,4 +1,4 @@
-package com.example.nasaearthyimage.DataModel;
+package com.example.finalproject.DataModel;
 
 import androidx.room.Dao;
 import androidx.room.Delete;

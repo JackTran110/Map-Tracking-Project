@@ -1,4 +1,4 @@
-package com.example.nasaearthyimage.DataModel;
+package com.example.finalproject.DataModel;
 
 import android.content.Context;
 

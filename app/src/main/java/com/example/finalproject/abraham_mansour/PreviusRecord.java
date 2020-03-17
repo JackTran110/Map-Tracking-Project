@@ -1,4 +1,4 @@
-package com.example.nasaearthyimage;
+package com.example.finalproject.abraham_mansour;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -8,10 +8,11 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.widget.Toast;
 
-import com.example.nasaearthyimage.DataModel.AppDatabase;
-import com.example.nasaearthyimage.DataModel.DatabaseClient;
-import com.example.nasaearthyimage.DataModel.ImageAdapter;
-import com.example.nasaearthyimage.DataModel.listDataModel;
+import com.example.finalproject.DataModel.ImageAdapter;
+import com.example.finalproject.DataModel.listDataModel;
+import com.example.finalproject.DataModel.AppDatabase;
+import com.example.finalproject.DataModel.DatabaseClient;
+import com.example.nasaearthyimage.R;
 
 import java.util.List;
 

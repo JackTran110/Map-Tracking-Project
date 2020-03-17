@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.finalproject.ApplicationHome">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="28dp"
+        android:text="@string/welcome" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/welcome"
+        android:layout_marginTop="20dp"
+        android:text="@string/select" />
+
+    <ImageView
+        android:id="@+id/guardianIcon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="130dp"
+        app:srcCompat="@drawable/the_guardian" />
+
+    <Button
+        android:id="@+id/guardianButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/guardianIcon"
+        android:layout_alignRight="@+id/guardianIcon"
+        android:textSize="10dp"
+        android:text="@string/toGuardian" />
+
+    <ImageView
+        android:id="@+id/saturnIcon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignTop="@id/guardianIcon"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/nasa" />
+
+    <Button
+        android:id="@+id/dayImageButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/guardianIcon"
+        android:layout_alignLeft="@+id/saturnIcon"
+        android:textSize="10dp"
+        android:text="@string/toDayImage" />
+
+    <ImageView
+        android:id="@+id/earthImageIcon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignLeft="@id/guardianIcon"
+        android:layout_above="@id/earthImageButton"
+        app:srcCompat="@drawable/earth" />
+
+    <Button
+        android:id="@+id/earthImageButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/guardianIcon"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:textSize="10dp"
+        android:text="@string/toEarthImage" />
+
+    <ImageView
+        android:id="@+id/bbcNewsIcon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignLeft="@id/saturnIcon"
+        android:layout_above="@id/earthImageButton"
+        app:srcCompat="@drawable/bbc_news" />
+
+    <Button
+        android:id="@+id/bbsNewsButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/saturnIcon"
+        android:layout_alignBottom="@id/earthImageButton"
+        android:textSize="10dp"
+        android:text="@string/toBBCNews" />
+</RelativeLayout>

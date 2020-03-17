@@ -1,4 +1,4 @@
-package com.example.nasaearthyimage.DataModel;
+package com.example.finalproject.DataModel;
 
 
 import retrofit2.Call;

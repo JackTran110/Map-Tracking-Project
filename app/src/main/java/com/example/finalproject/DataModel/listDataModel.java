@@ -1,4 +1,4 @@
-package com.example.nasaearthyimage.DataModel;
+package com.example.finalproject.DataModel;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;

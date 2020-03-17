@@ -14,8 +14,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PreviusRecord"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name="com.example.finalproject.abraham_mansour.NasaImageOfTheDay"></activity>
+        <activity android:name="com.example.finalproject.abraham_mansour.PreviusRecord" />
+        <activity android:name="com.example.finalproject.ApplicationHome">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

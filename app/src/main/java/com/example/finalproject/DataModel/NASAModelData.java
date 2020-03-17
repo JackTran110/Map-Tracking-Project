@@ -1,4 +1,4 @@
-package com.example.nasaearthyimage.DataModel;
+package com.example.finalproject.DataModel;
 
 public class NASAModelData {
     private String date, explanation, hdurl, media_type, service_version, title, url;
