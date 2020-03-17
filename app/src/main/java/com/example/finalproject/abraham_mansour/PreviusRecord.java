@@ -8,10 +8,10 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.widget.Toast;
 
-import com.example.finalproject.DataModel.ImageAdapter;
-import com.example.finalproject.DataModel.listDataModel;
-import com.example.finalproject.DataModel.AppDatabase;
-import com.example.finalproject.DataModel.DatabaseClient;
+import com.example.finalproject.abraham_mansour.DataModel.ImageAdapter;
+import com.example.finalproject.abraham_mansour.DataModel.listDataModel;
+import com.example.finalproject.abraham_mansour.DataModel.AppDatabase;
+import com.example.finalproject.abraham_mansour.DataModel.DatabaseClient;
 import com.example.nasaearthyimage.R;
 
 import java.util.List;

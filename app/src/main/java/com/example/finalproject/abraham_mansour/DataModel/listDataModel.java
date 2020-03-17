@@ -1,4 +1,4 @@
-package com.example.finalproject.DataModel;
+package com.example.finalproject.abraham_mansour.DataModel;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;

@@ -22,10 +22,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
-import com.example.finalproject.DataModel.NASAModelData;
-import com.example.finalproject.DataModel.listDataModel;
-import com.example.finalproject.DataModel.ApiInterface;
-import com.example.finalproject.DataModel.DatabaseClient;
+import com.example.finalproject.abraham_mansour.DataModel.NASAModelData;
+import com.example.finalproject.abraham_mansour.DataModel.listDataModel;
+import com.example.finalproject.abraham_mansour.DataModel.ApiInterface;
+import com.example.finalproject.abraham_mansour.DataModel.DatabaseClient;
 import com.example.nasaearthyimage.R;
 
 import java.io.File;
