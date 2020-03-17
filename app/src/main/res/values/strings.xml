@@ -1,4 +1,5 @@
 <resources>
+    <!--Main String-->
     <string name="app_name">Final Project</string>
     <string name="toGuardian">Guardian News</string>
     <string name="toDayImage">Image Of The Day</string>
@@ -6,4 +7,12 @@
     <string name="welcome">Welcome To Final Project</string>
     <string name="select">Please select an activity</string>
     <string name="toEarthImage">Earth Image</string>
+
+    <!--Phong's strings-->
+
+    <!--Trang's strings-->
+
+    <!--Ny String-->
+
+    <!--Abe's strings-->
 </resources>
