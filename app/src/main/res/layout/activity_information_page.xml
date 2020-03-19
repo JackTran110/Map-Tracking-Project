@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.finalproject.phong_tran.InformationPage">
+
+    <TextView
+        android:id="@+id/pageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:typeface="serif"
+        android:textSize="28dp"
+        android:textColor="@color/Black"
+        android:text="@string/toEarthImage" />
+    <EditText
+        android:id="@+id/lon"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/pageTitle"
+        android:layout_marginTop="10dp"
+        android:inputType="numberDecimal"
+        android:typeface="serif"
+        android:hint="@string/getLon"/>
+
+    <EditText
+        android:id="@+id/lat"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/lon"
+        android:layout_marginTop="10dp"
+        android:inputType="numberDecimal"
+        android:typeface="serif"
+        android:hint="@string/getLat"/>
+
+    <Button
+        android:id="@+id/getImage"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/loadImage"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/lat"
+        android:background="@drawable/btn_round_background"
+        android:text="@string/getImage"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/saveImage"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/loadImage"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/lat"
+        android:background="@drawable/btn_round_background"
+        android:text="@string/saveImage"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/loadImage"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/getImage"
+        android:background="@drawable/btn_round_background"
+        android:text="@string/loadImage"
+        android:textColor="@color/white"/>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/loadImage"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/loadImage"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

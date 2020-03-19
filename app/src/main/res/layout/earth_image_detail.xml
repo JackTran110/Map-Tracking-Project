@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.finalproject.phong_tran.EarthImageDetail">
+
+    <ImageView
+        android:id="@+id/earthImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/lonValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/earthImage"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/lon"
+        android:textColor="@color/Black"
+        android:typeface="serif"/>
+
+    <TextView
+        android:id="@+id/latValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/earthImage"
+        android:layout_below="@id/lonValue"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/lat"
+        android:textColor="@color/Black"
+        android:typeface="serif"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/earthImage"
+        android:layout_alignBottom="@id/earthImage"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/date"
+        android:textColor="@color/Black"
+        android:typeface="serif"/>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

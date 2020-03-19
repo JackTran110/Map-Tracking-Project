@@ -6,4 +6,5 @@
     <color name="Black">#191818</color>
     <color name="white">#F8F7F7</color>
     <color name="login_color_dark">#E7D55454</color>
+    <color name="grey">#C0C0C0C0</color>
 </resources>

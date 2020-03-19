@@ -9,6 +9,19 @@
     <string name="toEarthImage">Earth Image</string>
 
     <!--Phong's strings-->
+    <string name="getLon">Please enter longitude...</string>
+    <string name="getLat">Please enter latitude...</string>
+    <string name="getImage">Get Image</string>
+    <string name="saveImage">Save Image</string>
+    <string name="loadImage">Load saved images</string>
+    <string name="lon">Longitude:</string>
+    <string name="lat">Latitude:</string>
+    <string name="date">Date:</string>
+    <string name="emptyLon">Please enter longitude!</string>
+    <string name="emptyLat">Please enter latitude!</string>
+    <string name="findImageFail">Can\'t find your position!</string>
+    <string name="findImageFailMessage">The position you\'ve entered is not available. Please try again!</string>
+    <string name="goBackBtn">Go back</string>
 
     <!--Trang's strings-->
 

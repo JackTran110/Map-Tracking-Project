@@ -85,7 +85,7 @@
         app:srcCompat="@drawable/bbc_news" />
 
     <Button
-        android:id="@+id/bbsNewsButton"
+        android:id="@+id/bbcNewsButton"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/saturnIcon"
