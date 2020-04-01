@@ -7,11 +7,15 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+import android.widget.Toolbar;
+import com.google.android.material.navigation.NavigationView;
 
 import com.example.nasaearthyimage.R;
 
 public class InformationPage extends AppCompatActivity {
 
+    private Toolbar toolbar;
+    private NavigationView navigationView;
     private Button getImage, saveImage, loadImage;
     private EditText getLon, getLat;
     private Bundle setData = new Bundle();
@@ -25,12 +29,13 @@ public class InformationPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_information_page);
 
+        toolbar = findViewById(R.id.toolbar);
+
         getImage = findViewById(R.id.getImage);
         saveImage = findViewById(R.id.saveImage);
         loadImage = findViewById(R.id.loadImage);
         getLon = findViewById(R.id.lon);
         getLat = findViewById(R.id.lat);
-
 
         checkButton(saveImage, findViewById(R.id.frame).isShown());
 

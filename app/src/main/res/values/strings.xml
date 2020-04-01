@@ -24,6 +24,10 @@
     <string name="goBackBtn">Go back</string>
     <string name="imageInformation">Image Information</string>
     <string name="imageInformationMessage">This image is taken in %s. It\'s location is %s x %s.</string>
+    <string name="clear">Clear Image</string>
+    <string name="mainMenu">Main Menu</string>
+    <string name="system">System</string>
+    <string name="help">Help</string>
 
     <!--Trang's strings-->
 

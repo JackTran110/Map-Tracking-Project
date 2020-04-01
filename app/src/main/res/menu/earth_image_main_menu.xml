@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="@string/mainMenu">
+
+        <menu>
+
+            <item android:title="@string/clear"
+                android:id="@+id/clear"/>
+
+            <item android:title="@string/saveImage"
+                android:id="@+id/save"/>
+
+            <item android:title="@string/loadImage"
+                android:id="@+id/load"/>
+
+        </menu>
+
+    </item>
+
+    <item android:title="@string/system">
+
+        <menu>
+
+            <item android:title="@string/help"
+                android:id="@+id/help"/>
+
+            <item android:title="@string/goBackBtn"
+                android:id="@+id/back"/>
+
+        </menu>
+
+    </item>
+
+</menu>
