@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -11,10 +12,13 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import android.app.Fragment;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+
+import androidx.annotation.RequiresApi;
 
 import com.example.nasaearthyimage.R;
 
@@ -30,6 +34,9 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
 
 public class EarthImageDetail extends Fragment {
 
@@ -66,9 +73,10 @@ public class EarthImageDetail extends Fragment {
     }
 
     public class EarthImageQuery extends AsyncTask<String, Integer, String> {
-        String ret, lon, lat, date, imageId, queryImageUrl, queryUrl = String.format("https://api.nasa.gov/planetary/earth/imagery/?lon=%s&lat=%s&date=2017-05-17&api_key=DEMO_KEY", lonText, latText);
+        String ret, lon, lat, date, queryUrl = String.format("https://dev.virtualearth.net/REST/V1/Imagery/Map/Birdseye/%s,%s/20?dir=180&ms=500,500&key=ArPnSmhLaKdjFK9Ac8C6mZEs0EmJNirA6EQpLe5OWAP2CxKTsb7Jfs3m-3Tt-asx", lonText, latText);
         Bitmap earthImage;
 
+        @RequiresApi(api = Build.VERSION_CODES.O)
         @Override
         protected String doInBackground(String... strings) {
             try{
@@ -77,44 +85,19 @@ public class EarthImageDetail extends Fragment {
                 lat = latText;
                 publishProgress(50);
 
-                URL url = new URL(queryUrl);
-                HttpURLConnection urlConnection =(HttpURLConnection) url.openConnection();
-
-                BufferedReader reader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
-                StringBuilder sb = new StringBuilder();
-                String line;
-                while((line = reader.readLine()) != null){
-                    sb.append(line).append("\n");
-                }
-                String result = sb.toString();
-
-                JSONObject jsonObject = new JSONObject(result);
-                date = jsonObject.getString("date").substring(0, 10);
+                date = LocalDateTime.now().format(DateTimeFormatter.ofLocalizedDateTime(FormatStyle.SHORT));
                 publishProgress(75);
-                imageId = jsonObject.getString("id");
-                queryImageUrl = jsonObject.getString("url");
-
-                if(imageId != null && !imageId.isEmpty() && fileExistence(imageId)){
-                    FileInputStream fis = null;
-                    try {    fis = parent.openFileInput(imageId);   }
-                    catch (FileNotFoundException e) {    e.printStackTrace();  }
-                    earthImage = BitmapFactory.decodeStream(fis);
-                    Log.i(imageId, "File is already exists.");
-                }
-                else {
-                    url = new URL(queryImageUrl);
-                    urlConnection = (HttpURLConnection) url.openConnection();
-                    urlConnection.connect();
-                    int responseCode = urlConnection.getResponseCode();
-                    if (responseCode == 200) {
-                        earthImage = BitmapFactory.decodeStream(urlConnection.getInputStream());
-                    }
+                URL url = new URL(queryUrl);
+                HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
+                urlConnection.connect();
+                int responseCode = urlConnection.getResponseCode();
+                if (responseCode == 200) {
+                    earthImage = BitmapFactory.decodeStream(urlConnection.getInputStream());
                 }
                 publishProgress(100);
             }
             catch(MalformedURLException mfe){ ret = "Malformed URL exception."; }
             catch(IOException ioe)          { ret = "IO exception. Is the Wifi connected?";}
-            catch (JSONException e)         { ret = "Json exception. Can't get Json object.";}
 
             return ret;
         }
@@ -135,14 +118,14 @@ public class EarthImageDetail extends Fragment {
                 alertBuilder.setMessage(parent.getText(R.string.findImageFailMessage));
                 alertBuilder.create().show();
                 parent.getFragmentManager().beginTransaction().remove(EarthImageDetail.this).commit();
-                parent.checkButton(parent.findViewById(R.id.saveImage), false);
+                parent.checkButton((Button) parent.findViewById(R.id.saveImage), false);
             }
             else{
                 dateView.setText(String.format("%s %s.", getText(R.string.date), date));
                 earthImageView.setImageBitmap(earthImage);
             }
             parent.setEarthImage(new EarthImage(lon, lat, date, earthImage));
-            parent.checkButton(parent.findViewById(R.id.saveImage), true);
+            parent.checkButton((Button) parent.findViewById(R.id.saveImage), true);
             progressBar.setVisibility(View.INVISIBLE);
         }
 

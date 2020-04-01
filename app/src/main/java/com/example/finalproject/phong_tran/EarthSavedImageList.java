@@ -1,8 +1,11 @@
 package com.example.finalproject.phong_tran;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 
@@ -37,6 +40,16 @@ public class EarthSavedImageList extends AppCompatActivity {
 //            finish();
         }
 
-            goBack.setOnClickListener(v -> finish());
+        listView.setOnItemClickListener((AdapterView<?> parent, View view, int position, long id) -> {
+            EarthImage earthImage = (EarthImage) parent.getAdapter().getItem(position);
+
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setTitle(R.string.imageInformation);
+            builder.setMessage(String.format((String) getText(R.string.imageInformationMessage), earthImage.getDate(), earthImage.getLon(), earthImage.getLat()));
+            AlertDialog dialog = builder.create();
+            dialog.show();
+        });
+
+        goBack.setOnClickListener(v -> finish());
     }
 }

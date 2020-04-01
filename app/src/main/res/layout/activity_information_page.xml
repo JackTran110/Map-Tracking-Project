@@ -23,7 +23,7 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/pageTitle"
         android:layout_marginTop="10dp"
-        android:inputType="numberDecimal"
+        android:inputType="textNoSuggestions"
         android:typeface="serif"
         android:hint="@string/getLon"/>
 
@@ -34,7 +34,7 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/lon"
         android:layout_marginTop="10dp"
-        android:inputType="numberDecimal"
+        android:inputType="textNoSuggestions"
         android:typeface="serif"
         android:hint="@string/getLat"/>
 

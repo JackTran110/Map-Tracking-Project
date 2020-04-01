@@ -22,6 +22,8 @@
     <string name="findImageFail">Can\'t find your position!</string>
     <string name="findImageFailMessage">The position you\'ve entered is not available. Please try again!</string>
     <string name="goBackBtn">Go back</string>
+    <string name="imageInformation">Image Information</string>
+    <string name="imageInformationMessage">This image is taken in %s. It\'s location is %s x %s.</string>
 
     <!--Trang's strings-->
 
