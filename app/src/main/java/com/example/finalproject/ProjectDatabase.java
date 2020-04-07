@@ -52,13 +52,13 @@ public class ProjectDatabase extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    public long add(SQLiteDatabase db, String tableName, String data1, String data2, String data3, String data4){
+    public long add(SQLiteDatabase db, String tableName, String data1, String data2, String data3, String data4, byte[] data5){
         switch(tableName){
             case EARTH_IMAGE_TABLE:
                 cv.put(LONGITUDE_COL, data1);
                 cv.put(LATITUDE_COL, data2);
                 cv.put(DATE_COL, data3);
-                cv.put(BITMAP_COL, data4);
+                cv.put(BITMAP_COL, data5);
                 try {
                     return db.insert(tableName, null, cv);
                 }catch (Exception ex){
