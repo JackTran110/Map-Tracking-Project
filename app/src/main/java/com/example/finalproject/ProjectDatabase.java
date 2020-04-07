@@ -58,18 +58,33 @@ public class ProjectDatabase extends SQLiteOpenHelper {
                 cv.put(LATITUDE_COL, data2);
                 cv.put(DATE_COL, data3);
                 cv.put(BITMAP_COL, data4);
-                return db.insert(tableName, null, cv);
+                try {
+                    return db.insert(tableName, null, cv);
+                }catch (Exception ex){
+                    ex.printStackTrace();
+                    return -1;
+                }
             case BBC_NEWS_TABLE:
                 cv.put(TITLE_COL, data1);
                 cv.put(DESCRIPTION_COL, data2);
                 cv.put(DATE_COL, data3);
                 cv.put(URL_COL, data4);
-                return db.insert(tableName, null, cv);
+                try {
+                    return db.insert(tableName, null, cv);
+                }catch (Exception ex){
+                    ex.printStackTrace();
+                    return -1;
+                }
             case GUARDIAN_NEWS_TABLE:
                 cv.put(TITLE_COL, data1);
                 cv.put(URL_COL, data2);
                 cv.put(SECTION_COL, data3);
-                return db.insert(tableName, null, cv);
+                try {
+                    return db.insert(tableName, null, cv);
+                }catch (Exception ex){
+                    ex.printStackTrace();
+                    return -1;
+                }
             default: return -1;
         }
     }
