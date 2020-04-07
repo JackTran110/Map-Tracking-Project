@@ -14,8 +14,9 @@ public class ProjectDatabase extends SQLiteOpenHelper {
     public final static String TITLE_COL = "TITLE";
     public final static String DATE_COL = "DATE";
     public final static String URL_COL = "URL";
-    public final static String CREATE_QUERY_4_COLUMN = "CREATE TABLE %s (%s INTEGER PRIMARY KEY AUTOINCREMENT, %s TEXT, %s TEXT, %s TEXT, %s TEXT)";
-    public final static String CREATE_QUERY_3_COLUMN = "CREATE TABLE %s (%s INTEGER PRIMARY KEY AUTOINCREMENT, %s TEXT, %s TEXT, %s TEXT)";
+    public final static String CREATE_QUERY_EARTH_IMAGE = "CREATE TABLE %s (%s INTEGER PRIMARY KEY AUTOINCREMENT, %s TEXT, %s TEXT, %s TEXT, %s BLOB)";
+    public final static String CREATE_QUERY_BBC_NEWS = "CREATE TABLE %s (%s INTEGER PRIMARY KEY AUTOINCREMENT, %s TEXT, %s TEXT, %s TEXT, %s TEXT)";
+    public final static String CREATE_QUERY_GUARDIAN_NEWS = "CREATE TABLE %s (%s INTEGER PRIMARY KEY AUTOINCREMENT, %s TEXT, %s TEXT, %s TEXT)";
 
 
     public final static String EARTH_IMAGE_TABLE = "EARTH_IMAGE";
@@ -38,9 +39,9 @@ public class ProjectDatabase extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL(String.format(CREATE_QUERY_4_COLUMN, EARTH_IMAGE_TABLE, ID_COL, LONGITUDE_COL, LATITUDE_COL, DATE_COL, BITMAP_COL));
-        db.execSQL(String.format(CREATE_QUERY_4_COLUMN, BBC_NEWS_TABLE, ID_COL, TITLE_COL, DESCRIPTION_COL, DATE_COL, URL_COL));
-        db.execSQL(String.format(CREATE_QUERY_3_COLUMN, GUARDIAN_NEWS_TABLE, ID_COL, TITLE_COL, URL_COL, SECTION_COL));
+        db.execSQL(String.format(CREATE_QUERY_EARTH_IMAGE, EARTH_IMAGE_TABLE, ID_COL, LONGITUDE_COL, LATITUDE_COL, DATE_COL, BITMAP_COL));
+        db.execSQL(String.format(CREATE_QUERY_BBC_NEWS, BBC_NEWS_TABLE, ID_COL, TITLE_COL, DESCRIPTION_COL, DATE_COL, URL_COL));
+        db.execSQL(String.format(CREATE_QUERY_GUARDIAN_NEWS, GUARDIAN_NEWS_TABLE, ID_COL, TITLE_COL, URL_COL, SECTION_COL));
     }
 
     @Override
