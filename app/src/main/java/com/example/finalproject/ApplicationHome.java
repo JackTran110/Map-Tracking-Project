@@ -5,7 +5,6 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
-
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
@@ -19,20 +18,55 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
-
 import com.example.finalproject.abraham_mansour.NasaImageOfTheDay;
 import com.example.finalproject.phong_tran.InformationPage;
 import com.example.nasaearthyimage.R;
 import com.google.android.material.navigation.NavigationView;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicReference;
 
+/**
+ * This class is the main activity of this application.
+ *
+ * @author Ny Nguyen, Mansour Abraham, Phong Tran, Trang Nguyen.
+ * @version 1.0.0.
+ */
 public class ApplicationHome extends AppCompatActivity {
-    private static String TO_GUARDIAN, TO_DAY_IMAGE, TO_EARTH_IMAGE, TO_BBC_NEWS;
+    /**
+     * Key of the value "to The Guardian news".
+     */
+    private static String TO_GUARDIAN;
+
+    /**
+     * Key of the value "to image of the day".
+     */
+    private static String TO_DAY_IMAGE;
+
+    /**
+     * Key of the value "to earth image".
+     */
+    private static String TO_EARTH_IMAGE;
+
+    /**
+     * Key of the value "to BBC news".
+     */
+    private static String TO_BBC_NEWS;
+
+    /**
+     * Drawer layout of this activity.
+     */
     private DrawerLayout drawerLayout;
 
+    /**
+     * This method overrides its super class's method.
+     * <p>
+     *     In this class. The user can enter every activity, through the main list view or through the navigation view.
+     *     User can see information of this application by selecting the "help" menu item.
+     * </p>
+     *
+     * @param savedInstanceState a Bundle Object of saved instance state.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -68,6 +102,11 @@ public class ApplicationHome extends AppCompatActivity {
         });
     }
 
+    /**
+     * This method setups menu for the list view and the navigation bar.
+     *
+     * @param activityName Name of the selected activity.
+     */
     private void moveToActivities(String activityName){
         AtomicReference<Intent> intent = new AtomicReference<>(new Intent());
         if(activityName.equals(TO_GUARDIAN)){
@@ -86,49 +125,117 @@ public class ApplicationHome extends AppCompatActivity {
         }
     }
 
+    /**
+     * This method modifies the navigation view of this class.
+     *
+     * @param menuItem the selected menu item.
+     * @return a boolean if the navigation view is setup successfully.
+     */
     private boolean onNavigationItemSelected(MenuItem menuItem) {
-        moveToActivities(menuItem.getTitle().toString());
-        if (menuItem.getTitle().equals(getString(R.string.help))){
-            AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setTitle(R.string.helpTitle);
-            builder.setMessage(R.string.applicationHelpMessage);
-            builder.create().show();
+        try {
+            moveToActivities(menuItem.getTitle().toString());
+            if (menuItem.getTitle().equals(getString(R.string.help))) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                builder.setTitle(R.string.helpTitle);
+                builder.setMessage(R.string.applicationHelpMessage);
+                builder.create().show();
+            }
+            drawerLayout.closeDrawers();
+            return true;
+        }catch(Exception ex){
+            ex.printStackTrace();
+            return false;
         }
-        drawerLayout.closeDrawers();
-        return true;
     }
 
+    /**
+     * This class represents the menu items of the list view.
+     */
     private class MainMenuItem {
+        /**
+         * This is the icon of the memu item.
+         */
         private Drawable icon;
+
+        /**
+         * this is the title of the menu item.
+         */
         private String content;
 
+        /**
+         * This constructor is used to create a MainMenuItem Object and setup the fields.
+         *
+         * @param icon icon of the menu item.
+         * @param content title of the menu item.
+         */
         public MainMenuItem(Drawable icon, String content){
             setContent(content);
             setIcon(icon);
         }
 
-        private void setContent(String content) {
-            this.content = content;
-        }
-
-        private void setIcon(Drawable icon) {
-            this.icon = icon;
-        }
-
+        /**
+         * This method is used to get the icon of the menu item.
+         *
+         * @return the icon of the menu item.
+         */
         Drawable getIcon() {
             return icon;
         }
 
+        /**
+         * This method is used to get the title of the menu item.
+         *
+         * @return the title of the menu item.
+         */
         private String getContent() {
             return content;
         }
+
+        /**
+         * This method is used to set icon for the menu item.
+         *
+         * @param icon icon of the menu item.
+         */
+        private void setIcon(Drawable icon) {
+            this.icon = icon;
+        }
+
+        /**
+         * This method is used to set title for the menu item.
+         *
+         * @param content title of the menu item.
+         */
+        private void setContent(String content) {
+            this.content = content;
+        }
     }
 
+    /**
+     * This class is extended from ArrayAdapter class. It can adapt the MainMenuItems to the device's list view.
+     */
     private class MainMenuAdapter extends ArrayAdapter<MainMenuItem>{
+        /**
+         * The parent context.
+         */
         private Context context;
+
+        /**
+         * The layout of MainMenuItems.
+         */
         private int layout;
+
+        /**
+         * The list contains the MainMenuItems.
+         */
         private List<MainMenuItem> menuList;
 
+        /**
+         * This constructor is used to create an adapter and set its fields.
+         *
+         * @param context the parent context.
+         * @param layout the layout of MainMenuItems.
+         * @param menuList the list contains the MainMenuItems.
+         */
         public MainMenuAdapter(Context context, int layout, List<MainMenuItem> menuList){
             super(context, layout, menuList);
             this.context = context;
@@ -136,16 +243,35 @@ public class ApplicationHome extends AppCompatActivity {
             this.menuList = menuList;
         }
 
+        /**
+         * This method is used to get count of the menu items.
+         *
+         * @return count of menu items.
+         */
         @Override
         public int getCount() {
             return menuList.size();
         }
 
+        /**
+         * This method is used to get the menu item of the given position.
+         *
+         * @param position of the menu item.
+         * @return the menu item of the given position.
+         */
         @Override
         public MainMenuItem getItem(int position) {
             return menuList.get(position);
         }
 
+        /**
+         * This method is used to get the item view of the selected position.
+         *
+         * @param position position of the item view
+         * @param convertView the view that about to be converted.
+         * @param parent parent view group.
+         * @return the view of the position.
+         */
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);

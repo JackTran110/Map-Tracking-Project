@@ -3,7 +3,6 @@ package com.example.finalproject.phong_tran;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-
 import android.content.DialogInterface;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -15,27 +14,58 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
-
 import com.example.finalproject.ProjectDatabase;
 import com.example.nasaearthyimage.R;
 import com.google.android.material.snackbar.Snackbar;
-
 import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
+/**
+ * This class represents the Activity that contains the List of favourite Earth Image.
+ *
+ * @author Phong Tran.
+ * @version 1.0.0.
+ */
 public class EarthSavedImageList extends AppCompatActivity {
 
-    private ArrayList<EarthImage> list = new ArrayList<>();
-    private EarthImageAdapter adapter;
+    /**
+     * This ProjectDatabase field is used to get and interact with the project's database.
+     */
     private ProjectDatabase helper = new ProjectDatabase(this, 1);
-    private static SQLiteDatabase db;
+
+    /**
+     * This field is a list of Earth Image.
+     */
+    private List<EarthImage> list = new ArrayList<>();
+
+    /**
+     * This field is an adapter that can adapt Earth Images information into the device's list view.
+     */
+    private EarthImageAdapter adapter;
+
+    /**
+     * This is the builder of Alert Dialogs.
+     */
     private AlertDialog.Builder builder;
 
-    public EarthSavedImageList(){
+    /**
+     * this is the database of the project.
+     */
+    private static SQLiteDatabase db;
 
-    }
-
+    /**
+     * This method overrides the AppCompatActivity's onCreate method.
+     *<p>
+     *     In this method, the fields are declared, the action bar of the activity is set.
+     *     Put data of the EarthImage field of the InformationPage class in the database.
+     *     Data from the database is loaded to the device's list view.
+     *     The list's on click listener, on long click listener and the Go Back button's listener is set.
+     *</p>
+     *
+     * @param savedInstanceState a Bundle variable that stores the saved instance state.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,10 +74,12 @@ public class EarthSavedImageList extends AppCompatActivity {
         ListView listView = findViewById(R.id.earthImageList);
         Toolbar toolbar = findViewById(R.id.saved_list_toolbar);
         Button goBack = findViewById(R.id.goBack);
+
+        builder = new AlertDialog.Builder(this);
         adapter = new EarthImageAdapter(this, R.layout.earth_image_detail, list);
         listView.setAdapter(adapter);
         db = helper.getWritableDatabase();
-        builder = new AlertDialog.Builder(this);
+
         setSupportActionBar(toolbar);
 
         if(Objects.requireNonNull(getIntent().getExtras()).getBoolean(InformationPage.IS_SAVE_BUTTON)){
@@ -69,7 +101,7 @@ public class EarthSavedImageList extends AppCompatActivity {
             EarthImage earthImage = (EarthImage) parent.getAdapter().getItem(position);
 
             builder.setTitle(R.string.imageInformation);
-            builder.setMessage(String.format((String) getText(R.string.imageInformationMessage), earthImage.getDate(), earthImage.getLon(), earthImage.getLat()));
+            builder.setMessage(String.format((String) getText(R.string.imageInformationMessage), earthImage.getId(), earthImage.getDate(), earthImage.getLon(), earthImage.getLat()));
             builder.create().show();
         });
 
@@ -80,9 +112,11 @@ public class EarthSavedImageList extends AppCompatActivity {
             builder.setMessage(R.string.deleteMessage);
             builder.setNeutralButton(R.string.cancel, (DialogInterface dialog, int which) -> Toast.makeText(this, R.string.cancelMessage, Toast.LENGTH_SHORT).show());
             builder.setNegativeButton(R.string.no, (DialogInterface dialog, int which) -> Toast.makeText(this, R.string.cancelMessage, Toast.LENGTH_SHORT).show());
+
             builder.setPositiveButton(R.string.yes, (DialogInterface dialog, int which) -> {
                 list.remove(earthImage);
                 adapter.notifyDataSetChanged();
+
                 Snackbar.make(listView, R.string.deleteConfirm, Snackbar.LENGTH_LONG)
                         .addCallback(new Snackbar.Callback() {
                             @Override
@@ -101,6 +135,7 @@ public class EarthSavedImageList extends AppCompatActivity {
                             adapter.notifyDataSetChanged();
                         }).show();
             });
+
             builder.create().show();
             return parent.isLongClickable();
         });
@@ -108,12 +143,9 @@ public class EarthSavedImageList extends AppCompatActivity {
         goBack.setOnClickListener(v -> finish());
     }
 
-    private static byte[] getBytes(Bitmap bitmap) {
-        ByteArrayOutputStream stream = new ByteArrayOutputStream();
-        bitmap.compress(Bitmap.CompressFormat.PNG, 0, stream);
-        return stream.toByteArray();
-    }
-
+    /**
+     * This method is used to load information from the database to the device's list view.
+     */
     private void loadList(){
         Cursor cursor = db.rawQuery("SELECT * FROM " + ProjectDatabase.EARTH_IMAGE_TABLE, null);
         cursor.moveToNext();
@@ -125,6 +157,23 @@ public class EarthSavedImageList extends AppCompatActivity {
         adapter.notifyDataSetChanged();
     }
 
+    /**
+     * This method is use to generate a Bitmap Object into a byte[] Object
+     *
+     * @param bitmap the Bitmap Object that need to be generated
+     * @return the byte[] Object that is generated from the Bitmap Object.
+     */
+    private static byte[] getBytes(Bitmap bitmap) {
+        ByteArrayOutputStream stream = new ByteArrayOutputStream();
+        bitmap.compress(Bitmap.CompressFormat.PNG, 0, stream);
+        return stream.toByteArray();
+    }
+
+    /**
+     * This method is used to get count of images in the database.
+     *
+     * @return count of images in the database
+     */
     private static int getListCount(){
         int listCount;
         Cursor cursor = db.rawQuery("SELECT * FROM " + ProjectDatabase.EARTH_IMAGE_TABLE, null);

@@ -35,7 +35,7 @@
     <string name="findImageFailMessage">The coordinates you\'ve entered is not available. Please try again!</string>
     <string name="goBackBtn">Go back</string>
     <string name="imageInformation">Image Information</string>
-    <string name="imageInformationMessage">This image is taken in %s. It\'s coordinates is %s x %s.</string>
+    <string name="imageInformationMessage">Database ID: %s.\n\nThis image is taken in %s. It\'s coordinates is %s x %s.</string>
     <string name="clear">Clear Image</string>
     <string name="mainMenu">Main Menu</string>
     <string name="system">System</string>

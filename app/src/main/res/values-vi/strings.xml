@@ -35,7 +35,7 @@
     <string name="findImageFailMessage">Tọa độ của bạn không tồn tại. Vui lòng thử lại!</string>
     <string name="goBackBtn">Quay lại</string>
     <string name="imageInformation">Thông tin hình ảnh</string>
-    <string name="imageInformationMessage">Ảnh được chụp vào ngày %s. Tọa độ của ảnh là %s x %s.</string>
+    <string name="imageInformationMessage">Database ID: %s.\n\nẢnh được chụp vào ngày %s. Tọa độ của ảnh là %s x %s.</string>
     <string name="clear">Clear ảnh</string>
     <string name="mainMenu">Menu chính</string>
     <string name="system">Hệ thống</string>
