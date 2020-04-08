@@ -1,0 +1,55 @@
+<resources>
+    <!--Main String-->
+    <string name="app_name">Final Project</string>
+    <string name="welcome">Chào mừng đến với Final Project</string>
+    <string name="select">Vui lòng chọn một hoạt động</string>
+    <string name="toGuardian">Guardian News</string>
+    <string name="toDayImage">Image Of The Day</string>
+    <string name="toBBCNews">BBC News</string>
+    <string name="toEarthImage">Earth Image</string>
+    <string name="help">Giúp đỡ</string>
+    <string name="helpTitle">Về ứng dụng</string>
+    <string name="open">Mở</string>
+    <string name="close">Đóng</string>
+    <string name="delete">Xóa</string>
+    <string name="cancel">Hủy</string>
+    <string name="no">Không</string>
+    <string name="yes">Có</string>
+    <string name="undo">Hoàn tác</string>
+    <string name="authors">Các lập trình viên:\nNy Nguyen,\nMansour Abraham,\nPhong Tran,\nTrang Nguyen.</string>
+    <string name="version">Phiên bản: 1.0.0.</string>
+    <string name="applicationHelpMessage">Ứng dụng này có bốn hoạt động, bạn có thể chọn và tận hưởng từng hoạt động.</string>
+
+    <!--Phong's strings-->
+    <string name="getLon">Vui lòng nhập kinh độ…</string>
+    <string name="getLat">Vui lòng nhập vĩ độ…</string>
+    <string name="getImage">Nhận hình ảnh</string>
+    <string name="saveImage">Lưu hình ảnh</string>
+    <string name="loadImage">Hình ảnh yêu thích</string>
+    <string name="lon">Kinh dộ:</string>
+    <string name="lat">Vĩ độ:</string>
+    <string name="date">Ngày chụp:</string>
+    <string name="emptyLon">Vui lòng nhập kinh độ!</string>
+    <string name="emptyLat">Vui lòng nhập vĩ độ!</string>
+    <string name="findImageFail">Không thể tìm thấy tọa độ của bạn!</string>
+    <string name="findImageFailMessage">Tọa độ của bạn không tồn tại. Vui lòng thử lại!</string>
+    <string name="goBackBtn">Quay lại</string>
+    <string name="imageInformation">Thông tin hình ảnh</string>
+    <string name="imageInformationMessage">Ảnh được chụp vào ngày %s. Tọa độ của ảnh là %s x %s.</string>
+    <string name="clear">Clear ảnh</string>
+    <string name="mainMenu">Menu chính</string>
+    <string name="system">Hệ thống</string>
+    <string name="saved">IẢnh đã được lưu!</string>
+    <string name="wrongCoordinates">Tọa độ bạn nhập không chính xác!</string>
+    <string name="helpMessage">Hoạt động này có thể chụp một ảnh vệ tinh của Trái Đất với tọa độ bạn đã nhập. Vui lòng nhập vào kinh độ và vĩ độ để nhận ảnh.\n\nSau khi đã nhận ảnh, bạn có thể lưu chúng vào một danh sách yêu thích và xem lại sau.</string>
+    <string name="deleteMessage">Bạn có muốn xóa bức ảnh này?</string>
+    <string name="cancelMessage">Bạn đã hủy bỏ thao tác xóa ảnh!</string>
+    <string name="deleteConfirm">Ảnh đã được xóa!</string>
+    <string name="author">Lập trình viên: Phong Tran.</string>
+
+    <!--Trang's strings-->
+
+    <!--Ny String-->
+
+    <!--Abe's strings-->
+</resources>

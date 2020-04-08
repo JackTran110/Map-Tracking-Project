@@ -39,7 +39,6 @@
         android:layout_alignLeft="@id/headerTitle"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="15dp"
-        android:gravity="center"
         android:typeface="serif"
         android:textColor="@color/Black"
         android:textSize="16dp"
