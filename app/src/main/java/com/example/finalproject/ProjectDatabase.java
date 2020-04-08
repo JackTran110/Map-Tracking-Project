@@ -92,7 +92,7 @@ public class ProjectDatabase extends SQLiteOpenHelper {
 
     public long delete(SQLiteDatabase db, String tableName, long id){
         try{
-            db.delete(tableName, "? = ?", new String[] {ID_COL, Long.toString(id)});
+            db.delete(tableName, ID_COL + " = " + Long.toString(id), null);
             return 0;
         }catch (Exception ex){
             ex.printStackTrace();

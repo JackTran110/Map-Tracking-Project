@@ -7,10 +7,11 @@
     <string name="welcome">Welcome To Final Project</string>
     <string name="select">Please select an activity</string>
     <string name="toEarthImage">Earth Image</string>
+    <string name="authors">Author:\nNy Nguyen,\nMansour Abraham,\nPhong Tran,\nTrang Nguyen.</string>
 
     <!--Phong's strings-->
-    <string name="getLon">Please enter longitude...</string>
-    <string name="getLat">Please enter latitude...</string>
+    <string name="getLon">Please enter longitude…</string>
+    <string name="getLat">Please enter latitude…</string>
     <string name="getImage">Get Image</string>
     <string name="saveImage">Save Image</string>
     <string name="loadImage">Load saved images</string>
@@ -19,15 +20,32 @@
     <string name="date">Date:</string>
     <string name="emptyLon">Please enter longitude!</string>
     <string name="emptyLat">Please enter latitude!</string>
-    <string name="findImageFail">Can\'t find your position!</string>
-    <string name="findImageFailMessage">The position you\'ve entered is not available. Please try again!</string>
+    <string name="findImageFail">Can\'t find your coordinates!</string>
+    <string name="findImageFailMessage">The coordinates you\'ve entered is not available. Please try again!</string>
     <string name="goBackBtn">Go back</string>
     <string name="imageInformation">Image Information</string>
-    <string name="imageInformationMessage">This image is taken in %s. It\'s location is %s x %s.</string>
+    <string name="imageInformationMessage">This image is taken in %s. It\'s coordinates is %s x %s.</string>
     <string name="clear">Clear Image</string>
     <string name="mainMenu">Main Menu</string>
     <string name="system">System</string>
     <string name="help">Help</string>
+    <string name="saved">Image has been saved!</string>
+    <string name="wrongCoordinates">The coordinates you entered is invalid!</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="helpTitle">About</string>
+    <string name="helpMessage"> This Activity is used to take an image of the Earth at the given coordinates. Please enter longitude and latitude to take your picture.\n\nAfter taking the image, you can save it in your favorite list of image and view it later.</string>
+    <string name="delete">Delete</string>
+    <string name="deleteMessage">Do you want to delete this image?</string>
+    <string name="cancel">Cancel</string>
+    <string name="cancelMessage">You\'ve canceled your deletion!</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="deleteConfirm">The image has been deleted!</string>
+    <string name="undo">Undo</string>
+    <string name="author">Author: Phong Tran</string>
+    <string name="version">Version: 1.0.0</string>
+    <string name="applicationHelpMessage">This application has four activities that you can select and enjoy each one.</string>
 
     <!--Trang's strings-->
 

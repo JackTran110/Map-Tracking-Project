@@ -785,31 +785,42 @@
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="app_name">Final Project</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="applicationHelpMessage">This application has four activities that you can select and enjoy each one.</string>
+    <string name="author">Author: Phong Tran</string>
+    <string name="authors">Author:\nNy Nguyen,\nMansour Abraham,\nPhong Tran,\nTrang Nguyen.</string>
     <string name="bottom_sheet_behavior" translatable="false">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
+    <string name="cancel">Cancel</string>
+    <string name="cancelMessage">You\'ve canceled your deletion!</string>
     <string name="character_counter_content_description">Characters entered %1$d of %2$d</string>
     <string name="character_counter_overflowed_content_description">Character limit exceeded %1$d of %2$d</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
     <string name="chip_text">Chip text</string>
     <string name="clear">Clear Image</string>
     <string name="clear_text_end_icon_content_description">Clear text</string>
+    <string name="close">Close</string>
     <string name="date">Date:</string>
+    <string name="delete">Delete</string>
+    <string name="deleteConfirm">The image has been deleted!</string>
+    <string name="deleteMessage">Do you want to delete this image?</string>
     <string name="emptyLat">Please enter latitude!</string>
     <string name="emptyLon">Please enter longitude!</string>
     <string name="error_icon_content_description">Error</string>
     <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
     <string name="fab_transformation_scrim_behavior" translatable="false">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
     <string name="fab_transformation_sheet_behavior" translatable="false">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
-    <string name="findImageFail">Can\'t find your position!</string>
-    <string name="findImageFailMessage">The position you\'ve entered is not available. Please try again!</string>
+    <string name="findImageFail">Can\'t find your coordinates!</string>
+    <string name="findImageFailMessage">The coordinates you\'ve entered is not available. Please try again!</string>
     <string name="getImage">Get Image</string>
-    <string name="getLat">Please enter latitude...</string>
-    <string name="getLon">Please enter longitude...</string>
+    <string name="getLat">Please enter latitude…</string>
+    <string name="getLon">Please enter longitude…</string>
     <string name="goBackBtn">Go back</string>
     <string name="help">Help</string>
+    <string name="helpMessage"> This Activity is used to take an image of the Earth at the given coordinates. Please enter longitude and latitude to take your picture.\n\nAfter taking the image, you can save it in your favorite list of image and view it later.</string>
+    <string name="helpTitle">About</string>
     <string name="hide_bottom_view_on_scroll_behavior" translatable="false">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
     <string description="Content description for an icon that appears in the title area of a dialog" name="icon_content_description">Dialog Icon</string>
     <string name="imageInformation">Image Information</string>
-    <string name="imageInformationMessage">This image is taken in %s. It\'s location is %s x %s.</string>
+    <string name="imageInformationMessage">This image is taken in %s. It\'s coordinates is %s x %s.</string>
     <string name="lat">Latitude:</string>
     <string name="loadImage">Load saved images</string>
     <string name="lon">Longitude:</string>
@@ -848,12 +859,15 @@
     <string description="a11y string to indicate this button switches the user to choosing a day [CHAR_LIMIT=NONE]" name="mtrl_picker_toggle_to_day_selection">Tap to switch to selecting a day</string>
     <string description="a11y string to indicate this button changes the input mode to a text field [CHAR_LIMIT=NONE]" name="mtrl_picker_toggle_to_text_input_mode">Switch to text input mode</string>
     <string description="a11y string to indicate this button switches the user to choosing a year [CHAR_LIMIT=NONE]" name="mtrl_picker_toggle_to_year_selection">Tap to switch to selecting a year</string>
+    <string name="no">No</string>
+    <string name="open">Open</string>
     <string name="password_toggle_content_description">Show password</string>
     <string name="path_password_eye" translatable="false">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
     <string name="path_password_eye_mask_strike_through" translatable="false">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_eye_mask_visible" translatable="false">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
     <string name="saveImage">Save Image</string>
+    <string name="saved">Image has been saved!</string>
     <string name="search_menu_title">Search</string>
     <string name="select">Please select an activity</string>
     <string name="status_bar_notification_info_overflow">999+</string>
@@ -862,7 +876,11 @@
     <string name="toDayImage">Image Of The Day</string>
     <string name="toEarthImage">Earth Image</string>
     <string name="toGuardian">Guardian News</string>
+    <string name="undo">Undo</string>
+    <string name="version">Version: 1.0.0</string>
     <string name="welcome">Welcome To Final Project</string>
+    <string name="wrongCoordinates">The coordinates you entered is invalid!</string>
+    <string name="yes">Yes</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>

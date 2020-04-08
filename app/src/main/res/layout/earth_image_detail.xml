@@ -17,7 +17,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/earthImage"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
         android:text="@string/lon"
         android:textColor="@color/Black"
@@ -42,15 +42,8 @@
         android:layout_toRightOf="@id/earthImage"
         android:layout_alignBottom="@id/earthImage"
         android:layout_marginLeft="10dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="10dp"
         android:text="@string/date"
         android:textColor="@color/Black"
         android:typeface="serif"/>
-
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
-        android:layout_height="150dp"
-        android:layout_alignParentRight="true"
-        android:focusable="false"/>
 </RelativeLayout>

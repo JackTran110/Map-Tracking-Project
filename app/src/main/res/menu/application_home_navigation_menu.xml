@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="@string/mainMenu">
+
+        <menu>
+
+            <item android:title="@string/toGuardian"
+                android:id="@+id/toGuardian"
+                android:icon="@drawable/the_guardian_icon"/>
+
+            <item android:title="@string/toDayImage"
+                android:id="@+id/toDayImage"
+                android:icon="@drawable/nasa_icon"/>
+
+            <item android:title="@string/toEarthImage"
+                android:id="@+id/toEarthImage"
+                android:icon="@drawable/earth_icon"/>
+
+            <item android:title="@string/toBBCNews"
+                android:id="@+id/toBBCNews"
+                android:icon="@drawable/bbc_news_icon"/>
+
+        </menu>
+
+    </item>
+
+    <item android:title="@string/system">
+
+        <menu>
+
+            <item android:title="@string/help"
+                android:id="@+id/help"
+                android:icon="@drawable/help"/>
+
+        </menu>
+
+    </item>
+
+</menu>

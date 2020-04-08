@@ -4,12 +4,32 @@
         "source": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\src\\main\\res\\layout\\activity_nasa_image_of_the_day.xml"
     },
     {
+        "merged": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\menu_application_home_navigation_menu.xml.flat",
+        "source": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\src\\main\\res\\menu\\application_home_navigation_menu.xml"
+    },
+    {
+        "merged": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\menu_earth_image_navigation_menu.xml.flat",
+        "source": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\src\\main\\res\\menu\\earth_image_navigation_menu.xml"
+    },
+    {
+        "merged": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_go_back.png.flat",
+        "source": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\src\\main\\res\\drawable\\go_back.png"
+    },
+    {
         "merged": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
         "source": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
+        "merged": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\menu_earth_image_toolbar_menu.xml.flat",
+        "source": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\src\\main\\res\\menu\\earth_image_toolbar_menu.xml"
+    },
+    {
         "merged": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
         "source": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_earth_icon.png.flat",
+        "source": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\src\\main\\res\\drawable\\earth_icon.png"
     },
     {
         "merged": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_round_background.xml.flat",
@@ -26,6 +46,14 @@
     {
         "merged": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\layout_earth_image_detail.xml.flat",
         "source": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\src\\main\\res\\layout\\earth_image_detail.xml"
+    },
+    {
+        "merged": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bbc_news_icon.png.flat",
+        "source": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\src\\main\\res\\drawable\\bbc_news_icon.png"
+    },
+    {
+        "merged": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\layout_earth_image_header.xml.flat",
+        "source": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\src\\main\\res\\layout\\earth_image_header.xml"
     },
     {
         "merged": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
@@ -48,6 +76,10 @@
         "source": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\src\\main\\res\\drawable\\nasa.png"
     },
     {
+        "merged": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_favourites.png.flat",
+        "source": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\src\\main\\res\\drawable\\favourites.png"
+    },
+    {
         "merged": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_information_page.xml.flat",
         "source": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\src\\main\\res\\layout\\activity_information_page.xml"
     },
@@ -56,12 +88,12 @@
         "source": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\src\\main\\res\\drawable\\earth.png"
     },
     {
-        "merged": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\menu_earth_image_main_menu.xml.flat",
-        "source": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\src\\main\\res\\menu\\earth_image_main_menu.xml"
-    },
-    {
         "merged": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\layout_application_home_menu_item.xml.flat",
+        "source": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\src\\main\\res\\layout\\application_home_menu_item.xml"
     },
     {
         "merged": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
@@ -72,8 +104,16 @@
         "source": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
+        "merged": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_the_guardian_icon.png.flat",
+        "source": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\src\\main\\res\\drawable\\the_guardian_icon.png"
+    },
+    {
         "merged": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\layout_recyclerview_images.xml.flat",
         "source": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\src\\main\\res\\layout\\recyclerview_images.xml"
+    },
+    {
+        "merged": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_nasa_icon.png.flat",
+        "source": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\src\\main\\res\\drawable\\nasa_icon.png"
     },
     {
         "merged": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bbc_news.png.flat",
@@ -84,8 +124,8 @@
         "source": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\src\\main\\res\\drawable\\the_guardian.png"
     },
     {
-        "merged": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\layout_toolbar.xml.flat",
-        "source": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\src\\main\\res\\layout\\toolbar.xml"
+        "merged": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\layout_application_home_header.xml.flat",
+        "source": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\src\\main\\res\\layout\\application_home_header.xml"
     },
     {
         "merged": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
@@ -94,6 +134,14 @@
     {
         "merged": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_save_image.png.flat",
+        "source": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\src\\main\\res\\drawable\\save_image.png"
+    },
+    {
+        "merged": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_help.png.flat",
+        "source": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\src\\main\\res\\drawable\\help.png"
     },
     {
         "merged": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
@@ -110,6 +158,10 @@
     {
         "merged": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_earth_saved_image_list.xml.flat",
         "source": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\src\\main\\res\\layout\\activity_earth_saved_image_list.xml"
+    },
+    {
+        "merged": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_clear_image.png.flat",
+        "source": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\src\\main\\res\\drawable\\clear_image.png"
     },
     {
         "merged": "D:\\ProgramData\\AndroidStudioProjects\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",

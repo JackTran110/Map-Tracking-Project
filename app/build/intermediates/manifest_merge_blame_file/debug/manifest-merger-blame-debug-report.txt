@@ -39,45 +39,46 @@
 23-->D:\ProgramData\AndroidStudioProjects\FinalProject\app\src\main\AndroidManifest.xml:14:9-54
 24        android:supportsRtl="true"
 24-->D:\ProgramData\AndroidStudioProjects\FinalProject\app\src\main\AndroidManifest.xml:15:9-35
-25        android:theme="@style/AppTheme" >
-25-->D:\ProgramData\AndroidStudioProjects\FinalProject\app\src\main\AndroidManifest.xml:16:9-40
-26        <activity android:name="com.example.finalproject.phong_tran.EarthSavedImageList" />
-26-->D:\ProgramData\AndroidStudioProjects\FinalProject\app\src\main\AndroidManifest.xml:17:9-101
-26-->D:\ProgramData\AndroidStudioProjects\FinalProject\app\src\main\AndroidManifest.xml:17:19-89
-27        <activity android:name="com.example.finalproject.phong_tran.InformationPage" />
-27-->D:\ProgramData\AndroidStudioProjects\FinalProject\app\src\main\AndroidManifest.xml:18:9-88
-27-->D:\ProgramData\AndroidStudioProjects\FinalProject\app\src\main\AndroidManifest.xml:18:19-85
-28        <activity android:name="com.example.finalproject.abraham_mansour.NasaImageOfTheDay" />
-28-->D:\ProgramData\AndroidStudioProjects\FinalProject\app\src\main\AndroidManifest.xml:19:9-95
-28-->D:\ProgramData\AndroidStudioProjects\FinalProject\app\src\main\AndroidManifest.xml:19:19-92
-29        <activity android:name="com.example.finalproject.abraham_mansour.PreviusRecord" />
-29-->D:\ProgramData\AndroidStudioProjects\FinalProject\app\src\main\AndroidManifest.xml:20:9-91
-29-->D:\ProgramData\AndroidStudioProjects\FinalProject\app\src\main\AndroidManifest.xml:20:19-88
-30        <activity android:name="com.example.finalproject.ApplicationHome" >
-30-->D:\ProgramData\AndroidStudioProjects\FinalProject\app\src\main\AndroidManifest.xml:21:9-27:20
-30-->D:\ProgramData\AndroidStudioProjects\FinalProject\app\src\main\AndroidManifest.xml:21:19-74
-31            <intent-filter>
-31-->D:\ProgramData\AndroidStudioProjects\FinalProject\app\src\main\AndroidManifest.xml:22:13-26:29
-32                <action android:name="android.intent.action.MAIN" />
-32-->D:\ProgramData\AndroidStudioProjects\FinalProject\app\src\main\AndroidManifest.xml:23:17-69
-32-->D:\ProgramData\AndroidStudioProjects\FinalProject\app\src\main\AndroidManifest.xml:23:25-66
-33
-34                <category android:name="android.intent.category.LAUNCHER" />
-34-->D:\ProgramData\AndroidStudioProjects\FinalProject\app\src\main\AndroidManifest.xml:25:17-77
-34-->D:\ProgramData\AndroidStudioProjects\FinalProject\app\src\main\AndroidManifest.xml:25:27-74
-35            </intent-filter>
-36        </activity>
-37
-38        <provider
-38-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\trand\.gradle\caches\transforms-2\files-2.1\87ac5c9302d2cdd805e2f4717a5cf3a7\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
-39            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-39-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\trand\.gradle\caches\transforms-2\files-2.1\87ac5c9302d2cdd805e2f4717a5cf3a7\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
-40            android:authorities="com.example.nasaearthyimage.lifecycle-process"
-40-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\trand\.gradle\caches\transforms-2\files-2.1\87ac5c9302d2cdd805e2f4717a5cf3a7\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
-41            android:exported="false"
-41-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\trand\.gradle\caches\transforms-2\files-2.1\87ac5c9302d2cdd805e2f4717a5cf3a7\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
-42            android:multiprocess="true" />
-42-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\trand\.gradle\caches\transforms-2\files-2.1\87ac5c9302d2cdd805e2f4717a5cf3a7\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
-43    </application>
-44
-45</manifest>
+25        android:testOnly="true"
+26        android:theme="@style/AppTheme" >
+26-->D:\ProgramData\AndroidStudioProjects\FinalProject\app\src\main\AndroidManifest.xml:16:9-40
+27        <activity android:name="com.example.finalproject.phong_tran.EarthSavedImageList" />
+27-->D:\ProgramData\AndroidStudioProjects\FinalProject\app\src\main\AndroidManifest.xml:17:9-101
+27-->D:\ProgramData\AndroidStudioProjects\FinalProject\app\src\main\AndroidManifest.xml:17:19-89
+28        <activity android:name="com.example.finalproject.phong_tran.InformationPage" />
+28-->D:\ProgramData\AndroidStudioProjects\FinalProject\app\src\main\AndroidManifest.xml:18:9-88
+28-->D:\ProgramData\AndroidStudioProjects\FinalProject\app\src\main\AndroidManifest.xml:18:19-85
+29        <activity android:name="com.example.finalproject.abraham_mansour.NasaImageOfTheDay" />
+29-->D:\ProgramData\AndroidStudioProjects\FinalProject\app\src\main\AndroidManifest.xml:19:9-95
+29-->D:\ProgramData\AndroidStudioProjects\FinalProject\app\src\main\AndroidManifest.xml:19:19-92
+30        <activity android:name="com.example.finalproject.abraham_mansour.PreviusRecord" />
+30-->D:\ProgramData\AndroidStudioProjects\FinalProject\app\src\main\AndroidManifest.xml:20:9-91
+30-->D:\ProgramData\AndroidStudioProjects\FinalProject\app\src\main\AndroidManifest.xml:20:19-88
+31        <activity android:name="com.example.finalproject.ApplicationHome" >
+31-->D:\ProgramData\AndroidStudioProjects\FinalProject\app\src\main\AndroidManifest.xml:21:9-27:20
+31-->D:\ProgramData\AndroidStudioProjects\FinalProject\app\src\main\AndroidManifest.xml:21:19-74
+32            <intent-filter>
+32-->D:\ProgramData\AndroidStudioProjects\FinalProject\app\src\main\AndroidManifest.xml:22:13-26:29
+33                <action android:name="android.intent.action.MAIN" />
+33-->D:\ProgramData\AndroidStudioProjects\FinalProject\app\src\main\AndroidManifest.xml:23:17-69
+33-->D:\ProgramData\AndroidStudioProjects\FinalProject\app\src\main\AndroidManifest.xml:23:25-66
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->D:\ProgramData\AndroidStudioProjects\FinalProject\app\src\main\AndroidManifest.xml:25:17-77
+35-->D:\ProgramData\AndroidStudioProjects\FinalProject\app\src\main\AndroidManifest.xml:25:27-74
+36            </intent-filter>
+37        </activity>
+38
+39        <provider
+39-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\trand\.gradle\caches\transforms-2\files-2.1\87ac5c9302d2cdd805e2f4717a5cf3a7\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
+40            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+40-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\trand\.gradle\caches\transforms-2\files-2.1\87ac5c9302d2cdd805e2f4717a5cf3a7\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
+41            android:authorities="com.example.nasaearthyimage.lifecycle-process"
+41-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\trand\.gradle\caches\transforms-2\files-2.1\87ac5c9302d2cdd805e2f4717a5cf3a7\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
+42            android:exported="false"
+42-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\trand\.gradle\caches\transforms-2\files-2.1\87ac5c9302d2cdd805e2f4717a5cf3a7\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
+43            android:multiprocess="true" />
+43-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\trand\.gradle\caches\transforms-2\files-2.1\87ac5c9302d2cdd805e2f4717a5cf3a7\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
+44    </application>
+45
+46</manifest>

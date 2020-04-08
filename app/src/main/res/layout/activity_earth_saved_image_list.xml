@@ -6,10 +6,18 @@
     android:layout_height="match_parent"
     tools:context="com.example.finalproject.phong_tran.EarthSavedImageList">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/saved_list_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/login_color_dark"/>
+
     <ListView
         android:id="@+id/earthImageList"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent"
+        android:layout_below="@id/saved_list_toolbar"
+        android:layout_above="@id/goBack">
     </ListView>
 
     <Button

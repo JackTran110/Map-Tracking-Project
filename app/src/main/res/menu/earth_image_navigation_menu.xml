@@ -7,13 +7,16 @@
         <menu>
 
             <item android:title="@string/clear"
-                android:id="@+id/clear"/>
+                android:id="@+id/clear"
+                android:icon="@drawable/clear_image"/>
 
             <item android:title="@string/saveImage"
-                android:id="@+id/save"/>
+                android:id="@+id/save"
+                android:icon="@drawable/save_image"/>
 
             <item android:title="@string/loadImage"
-                android:id="@+id/load"/>
+                android:id="@+id/load"
+                android:icon="@drawable/favourites"/>
 
         </menu>
 
@@ -24,10 +27,12 @@
         <menu>
 
             <item android:title="@string/help"
-                android:id="@+id/help"/>
+                android:id="@+id/help"
+                android:icon="@drawable/help"/>
 
             <item android:title="@string/goBackBtn"
-                android:id="@+id/back"/>
+                android:id="@+id/back"
+                android:icon="@drawable/go_back"/>
 
         </menu>
 

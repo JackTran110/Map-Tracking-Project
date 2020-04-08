@@ -46,7 +46,6 @@ public class EarthImageDetail extends Fragment {
     private TextView lonView, latView, dateView;
     private ImageView earthImageView;
     private InformationPage parent;
-    private CheckBox checkBox;
     private Bundle getData;
 
     @Override
@@ -54,7 +53,6 @@ public class EarthImageDetail extends Fragment {
         imageDetail = inflater.inflate(R.layout.earth_image_detail, container, false);
         parent = (InformationPage) getActivity();
 
-        checkBox = imageDetail.findViewById(R.id.checkBox);
         progressBar = parent.findViewById(R.id.progressBar);
         lonView = imageDetail.findViewById(R.id.lonValue);
         latView = imageDetail.findViewById(R.id.latValue);
@@ -68,13 +66,12 @@ public class EarthImageDetail extends Fragment {
         EarthImageQuery earthImageQuery = new EarthImageQuery();
         earthImageQuery.execute();
 
-        checkBox.setVisibility(View.INVISIBLE);
         return imageDetail;
     }
 
     public class EarthImageQuery extends AsyncTask<String, Integer, String> {
         String ret, lon, lat, date, queryUrl = String.format("https://dev.virtualearth.net/REST/V1/Imagery/Map/Birdseye/%s,%s/20?dir=180&ms=500,500&key=ArPnSmhLaKdjFK9Ac8C6mZEs0EmJNirA6EQpLe5OWAP2CxKTsb7Jfs3m-3Tt-asx", lonText, latText);
-        Bitmap earthImage;
+        Bitmap earthImage = null;
 
         @RequiresApi(api = Build.VERSION_CODES.O)
         @Override
@@ -112,32 +109,21 @@ public class EarthImageDetail extends Fragment {
         protected void onPostExecute(String s) {
             lonView.setText(String.format("%s %s.", parent.getText(R.string.lon), lon));
             latView.setText(String.format("%s %s.", parent.getText(R.string.lat), lat));
-            if(date == null || date.isEmpty() || earthImage == null || earthImage.equals("")){
+            dateView.setText(String.format("%s %s.", getText(R.string.date), date));
+            try{
+                earthImage.getWidth();
+                earthImageView.setImageBitmap(earthImage);
+                parent.checkButton(parent.findViewById(R.id.saveImage), true);
+            }catch (Exception ex){
                 AlertDialog.Builder alertBuilder = new AlertDialog.Builder(parent);
                 alertBuilder.setTitle(parent.getText(R.string.findImageFail));
                 alertBuilder.setMessage(parent.getText(R.string.findImageFailMessage));
                 alertBuilder.create().show();
                 parent.getFragmentManager().beginTransaction().remove(EarthImageDetail.this).commit();
-                parent.checkButton((Button) parent.findViewById(R.id.saveImage), false);
-            }
-            else{
-                dateView.setText(String.format("%s %s.", getText(R.string.date), date));
-                earthImageView.setImageBitmap(earthImage);
+                parent.checkButton(parent.findViewById(R.id.saveImage), false);
             }
             parent.setEarthImage(new EarthImage(lon, lat, date, earthImage));
-            parent.checkButton((Button) parent.findViewById(R.id.saveImage), true);
             progressBar.setVisibility(View.INVISIBLE);
-        }
-
-        public boolean fileExistence(String name){
-            File file;
-            try {
-                file = parent.getFileStreamPath(name);
-                return file.exists();
-            }catch (Exception e){
-                e.printStackTrace();
-                return false;
-            }
         }
     }
 }
