@@ -1,0 +1,104 @@
+<resources>
+    <!--Main String-->
+    <string name="app_name">Final Project</string>
+    <string name="welcome">Chào mừng đến với Final Project</string>
+    <string name="select">Vui lòng chọn một hoạt động</string>
+    <string name="toGuardian">Guardian News</string>
+    <string name="toDayImage">Image Of The Day</string>
+    <string name="toBBCNews">BBC News</string>
+    <string name="toEarthImage">Earth Image</string>
+    <string name="help">Trợ Giúp</string>
+    <string name="helpTitle">Về ứng dụng</string>
+    <string name="open">Mở</string>
+    <string name="close">Đóng</string>
+    <string name="delete">Xóa</string>
+    <string name="cancel">Hủy</string>
+    <string name="no">Không</string>
+    <string name="yes">Có</string>
+    <string name="undo">Hoàn tác</string>
+    <string name="authors">Các lập trình viên:\nNy Nguyen,\nMansour Abraham,\nPhong Tran,\nTrang Nguyen.</string>
+    <string name="version">Phiên bản: 1.0.0.</string>
+    <string name="applicationHelpMessage">Ứng dụng này có bốn hoạt động, bạn có thể chọn và tận hưởng từng hoạt động.</string>
+
+    <!--Phong's strings-->
+    <string name="getLon">Vui lòng nhập kinh độ…</string>
+    <string name="getLat">Vui lòng nhập vĩ độ…</string>
+    <string name="getImage">Nhận hình ảnh</string>
+    <string name="saveImage">Lưu hình ảnh</string>
+    <string name="noImage">Bạn chưa nhận hình ảnh nào cả!</string>
+    <string name="loadImage">Hình ảnh yêu thích</string>
+    <string name="noImageInList">Bạn chưa lưu hình ảnh nào cả!</string>
+    <string name="lon">Kinh dộ:</string>
+    <string name="lat">Vĩ độ:</string>
+    <string name="date">Ngày chụp:</string>
+    <string name="emptyLon">Vui lòng nhập kinh độ!</string>
+    <string name="emptyLat">Vui lòng nhập vĩ độ!</string>
+    <string name="findImageFail">Không thể tìm thấy tọa độ của bạn!</string>
+    <string name="findImageFailMessage">Tọa độ của bạn không tồn tại. Vui lòng thử lại!</string>
+    <string name="goBackBtn">Quay lại</string>
+    <string name="imageInformation">Thông tin hình ảnh</string>
+    <string name="imageInformationMessage">Database ID: %s.\n\nẢnh được chụp vào ngày %s. Tọa độ của ảnh là %s x %s.</string>
+    <string name="clear">Clear ảnh</string>
+    <string name="mainMenu">Menu chính</string>
+    <string name="otherActivities">Các hoạt động khác</string>
+    <string name="system">Hệ thống</string>
+    <string name="saved">IẢnh đã được lưu!</string>
+    <string name="wrongCoordinates">Tọa độ bạn nhập không chính xác!</string>
+    <string name="helpMessage">Hoạt động này có thể chụp một ảnh vệ tinh của Trái Đất với tọa độ bạn đã nhập. Vui lòng nhập vào kinh độ và vĩ độ để nhận ảnh.\n\nSau khi đã nhận ảnh, bạn có thể lưu chúng vào một danh sách yêu thích và xem lại sau.</string>
+    <string name="deleteMessage">Bạn có muốn xóa bức ảnh này?</string>
+    <string name="cancelMessage">Bạn đã hủy bỏ thao tác xóa ảnh!</string>
+    <string name="deleteConfirm">Ảnh đã được xóa!</string>
+    <string name="authorPhong">Lập trình viên: Phong Tran.</string>
+
+    <!--Trang's strings-->
+    <string name="bbc_help_title">Hướng dẫn sử dụng</string>
+    <string name="bbc_help_message">Hãy nhấn vào bất cứ mục nào để tiếp tục</string>
+    <string name="bbc_help_message_2">Bạn sẽ thấy chi tiết về mục ở trang kế tiếp</string>
+    <string name="item_click">Bạn đã nhấn vào mục</string>
+    <string name="item_alert_title">Mục Yêu Thích</string>
+    <string name="bbc_saved_button">Thêm vào danh sách</string>
+    <string name="item_alert_message">Bạn muốn thêm vào danh sách yêu thích?</string>
+    <string name="yes_message">Bạn chọn có</string>
+    <string name="no_message">Bạn chọn không</string>
+    <string name="snackbar_yes"> Mục đã được lưu</string>
+    <string name="snackbar_no">Mục chưa được lưu</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fav_title">Xóa thư mục</string>
+    <string name="fav_message">Bạn có muốn xóa thư mục này ra khỏi danh sách yêu thích</string>
+    <string name="fav_yes">Thư mục đã được xóa bỏ </string>
+    <string name="fav_no">Thư mục chưa được xóa bỏ</string>
+    <string name="bbc_view_button"> Xem danh sách</string>
+
+    <!--Ny String-->
+    <string name="menu_goBack">Trở về Trang Dự Án</string>
+    <string name="menu_article_search">Tìm Báo trang The Guardian</string>
+    <string name="menu_main_page">Trang Chính</string>
+    <string name="OK">Đồng Ý</string>
+    <string name="deleted_success">Xóa thành công</string>
+    <string name="delete_this_guardian_news">Xóa bài này phải không ?</string>
+    <string name="search_title">Vui lòng nhập vào từ khóa:</string>
+    <string name="share_keywords">từ khóa lần trước</string>
+    <string name="add">Thêm vào danh sách</string>
+    <string name="delete_article">Xóa khỏi danh sách</string>
+    <string name="all_related_article">Những Bài Tìm Được</string>
+    <string name="add_favorite_list">Danh Sách Bài Yêu Thích</string>
+    <string name="article_is_added_to_favorite">Bài báo đã được thêm vào danh sách yêu thích</string>
+    <string name="The_article_is_added_to_favorite">Bài báo đã được thêm vào danh sách yêu thích</string>
+    <string name="article_detail">Thông tin về Bài Báo</string>
+    <string name="add_to_favorite">thêm vào danh sách yêu thích</string>
+    <string name="title">Tiêu đề</string>
+    <string name="article_title">Tiêu đề bài báo</string>
+    <string name="section">Phần</string>
+    <string name="article_section">Phần</string>
+    <string name="link">đường dẫn</string>
+    <string name="main_title">TÌM KIẾM BÁO TRÊN THE GUARDIAN</string>
+    <string name="favorite_title">DANH SÁCH BÀI YÊU THÍCH</string>
+    <string name="headerString">TÌM KIẾM BÁO TRÊN THE GUARDIAN</string>
+    <string name="author_ny">\@tác giả: Ny Nguyen - phiên bản cuối</string>
+    <string name="name">Tên</string>
+    <string name="search">Tìm kiếm</string>
+    <string name="searchArticle">Trang Tìm Kiếm</string>
+    <string name="goBack">TRỞ LẠI TRANG DỰ ÁN</string>
+
+    <!--Abe's strings-->
+</resources>

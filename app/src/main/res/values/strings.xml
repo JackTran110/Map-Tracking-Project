@@ -1,0 +1,104 @@
+<resources>
+    <!--Main String-->
+    <string name="app_name">Final Project</string>
+    <string name="welcome">Welcome To Final Project</string>
+    <string name="select">Please select an activity</string>
+    <string name="toGuardian">Guardian News</string>
+    <string name="toDayImage">Image Of The Day</string>
+    <string name="toBBCNews">BBC News</string>
+    <string name="toEarthImage">Earth Image</string>
+    <string name="help">Help</string>
+    <string name="helpTitle">About</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="undo">Undo</string>
+    <string name="authors">Authors:\nNy Nguyen,\nMansour Abraham,\nPhong Tran,\nTrang Nguyen.</string>
+    <string name="version">Version: 1.0.0.</string>
+    <string name="applicationHelpMessage">This application has four activities that you can select and enjoy each one.</string>
+
+    <!--Phong's strings-->
+    <string name="getLon">Please enter longitude…</string>
+    <string name="getLat">Please enter latitude…</string>
+    <string name="getImage">Get Image</string>
+    <string name="saveImage">Save Image</string>
+    <string name="noImage">You\'ve not got any image!</string>
+    <string name="loadImage">Load favourite images</string>
+    <string name="noImageInList">You\'ve not saved any image!</string>
+    <string name="lon">Longitude:</string>
+    <string name="lat">Latitude:</string>
+    <string name="date">Date:</string>
+    <string name="emptyLon">Please enter longitude!</string>
+    <string name="emptyLat">Please enter latitude!</string>
+    <string name="findImageFail">Can\'t find your coordinates!</string>
+    <string name="findImageFailMessage">The coordinates you\'ve entered is not available. Please try again!</string>
+    <string name="goBackBtn">Go back</string>
+    <string name="imageInformation">Image Information</string>
+    <string name="imageInformationMessage">Database ID: %s.\n\nThis image is taken in %s. It\'s coordinates is %s x %s.</string>
+    <string name="clear">Clear Image</string>
+    <string name="mainMenu">Main Menu</string>
+    <string name="otherActivities">Other Activities</string>
+    <string name="system">System</string>
+    <string name="saved">Image has been saved!</string>
+    <string name="wrongCoordinates">The coordinates you entered is invalid!</string>
+    <string name="helpMessage">This Activity is used to take an image of the Earth at the given coordinates. Please enter longitude and latitude to take your picture.\n\nAfter taking the image, you can save it in your favorite list of image and view it later.</string>
+    <string name="deleteMessage">Do you want to delete this image?</string>
+    <string name="cancelMessage">You\'ve canceled your deletion!</string>
+    <string name="deleteConfirm">The image has been deleted!</string>
+    <string name="authorPhong">Author: Phong Tran.</string>
+
+    <!--Trang's strings-->
+    <string name="bbc_help_title">Usage Instruction</string>
+    <string name="bbc_help_message">Click on any item in the list view to start the interface</string>
+    <string name="bbc_help_message_2">You will see item details on the next page</string>
+    <string name="item_click">You clicked an item</string>
+    <string name="item_alert_title">Favorite List</string>
+    <string name="bbc_saved_button">Add to favorite list</string>
+    <string name="item_alert_message">Do you still want to add this to your favorite list?</string>
+    <string name="yes_message">You choose yes</string>
+    <string name="no_message">You choose no</string>
+    <string name="snackbar_yes"> Item has been saved</string>
+    <string name="snackbar_no">Item did not saved</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fav_title">Delete item</string>
+    <string name="fav_message">You want to remove this item out of favorite list? </string>
+    <string name="fav_yes">Item removed</string>
+    <string name="fav_no">Item not removed</string>
+    <string name="bbc_view_button"> View favorite list</string>
+
+    <!--Ny String-->
+    <string name="menu_goBack">Go Back Final Project</string>
+    <string name="menu_article_search">The Guardian article search</string>
+    <string name="menu_main_page">Main Page</string>
+    <string name="OK">OK</string>
+    <string name="deleted_success" >The deletion is successful</string>
+    <string name="delete_this_guardian_news">Delete this article ?</string>
+    <string name="search_title">Please enter the keywords:</string>
+    <string name="share_keywords">SharePreference keywords</string>
+    <string name="add">Add this article into the list</string>
+    <string name="delete_article">Delete the article from the list</string>
+    <string name="all_related_article">ARTICLE SEARCH LIST</string>
+    <string name="add_favorite_list">Article Favorite List</string>
+    <string name="article_is_added_to_favorite">The article is added to favorite list</string>
+    <string name="The_article_is_added_to_favorite">The article is added to favorite list</string>
+    <string name="article_detail">Article Information</string>
+    <string name="add_to_favorite">add to articles favorite</string>
+    <string name="title">Title</string>
+    <string name="article_title">Article Title</string>
+    <string name="section">Section</string>
+    <string name="article_section">Section</string>
+    <string name="link">Link</string>
+    <string name="main_title">THE GUARDIAN SEARCH</string>
+    <string name="favorite_title">FAVORITE LIST</string>
+    <string name="headerString">THE GUARDIAN ARTICLE SEARCH</string>
+    <string name="author_ny">\@author: Ny Nguyen - final version</string>
+    <string name="name">Name</string>
+    <string name="search">Search</string>
+    <string name="searchArticle">SEARCH PAGE</string>
+    <string name="goBack">GO BACK FINAL PROJECT</string>
+
+    <!--Abe's strings-->
+</resources>

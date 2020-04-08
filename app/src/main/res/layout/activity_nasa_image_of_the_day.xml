@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.finalproject.abraham_mansour.NasaImageOfTheDay">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_sigmawarehouse"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:gravity="center"
+            android:text="NASA Earthy Image"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="YYYY-MM-DD"
+        app:layout_constraintBottom_toTopOf="@+id/date_textView"
+        app:layout_constraintEnd_toStartOf="@+id/btnGet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_sigmawarehouse" />
+
+    <Button
+        android:id="@+id/btnGet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="88dp"
+        android:text="Get Data"
+        app:layout_constraintBottom_toTopOf="@+id/date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_sigmawarehouse"
+        app:layout_constraintVertical_bias="0.968" />
+
+    <TextView
+        android:id="@+id/seeAll"
+        android:layout_width="185dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="4dp"
+        android:paddingBottom="5dp"
+        android:text="See all saved images"
+        android:textColor="#F60606"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hdImage" />
+
+    <TextView
+        android:id="@+id/date_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="168dp"
+        android:paddingBottom="5dp"
+        android:text="Date:"
+        android:textColor="@color/Black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_sigmawarehouse" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="5dp"
+        android:text="--"
+        android:textColor="@color/Black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/date_textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/date_textView"
+        app:layout_constraintTop_toTopOf="@+id/date_textView" />
+
+    <TextView
+        android:id="@+id/url_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="5dp"
+        android:text="URL:"
+        android:textColor="@color/Black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginRight="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/date_textView"
+        app:layout_constraintStart_toStartOf="@+id/date_textView"
+        app:layout_constraintTop_toBottomOf="@+id/date_textView" />
+
+    <TextView
+        android:id="@+id/url"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="--"
+        android:textColor="@color/Black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/url_textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/url_textView"
+        app:layout_constraintTop_toTopOf="@+id/url_textView" />
+
+    <Button
+        android:id="@+id/hdImage"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/btn_round_background"
+        android:text="HD Image"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/url"
+        app:layout_constraintVertical_bias="0.13999999" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

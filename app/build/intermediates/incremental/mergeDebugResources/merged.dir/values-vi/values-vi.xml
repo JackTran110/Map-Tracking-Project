@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="OK">Đồng Ý</string>
+    <string name="The_article_is_added_to_favorite">Bài báo đã được thêm vào danh sách yêu thích</string>
+    <string msgid="7903180715631665059" name="abc_action_bar_home_description">"Chỉ đường về nhà"</string>
+    <string msgid="6794660482873516081" name="abc_action_bar_up_description">"Di chuyển lên"</string>
+    <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"Tùy chọn khác"</string>
+    <string msgid="2571498368472823490" name="abc_action_mode_done">"Xong"</string>
+    <string msgid="3732416590524162402" name="abc_activity_chooser_view_see_all">"Xem tất cả"</string>
+    <string msgid="1798588241954930982" name="abc_activitychooserview_choose_application">"Chọn một ứng dụng"</string>
+    <string msgid="3403923230105792483" name="abc_capital_off">"TẮT"</string>
+    <string msgid="7831734969929204599" name="abc_capital_on">"BẬT"</string>
+    <string msgid="5725160506500770567" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="944415252197684443" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="129742188101734366" name="abc_menu_delete_shortcut_label">"delete"</string>
+    <string msgid="6840127756824236027" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="4974283687810130415" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="8046416353848716905" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="3271697756921353410" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="2304645930658438191" name="abc_menu_space_shortcut_label">"space"</string>
+    <string msgid="8327365089695024394" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="3570106412128999382" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="940844115270746197" name="abc_search_hint">"Tìm kiếm…"</string>
+    <string msgid="1769270744562318534" name="abc_searchview_description_clear">"Xóa truy vấn"</string>
+    <string msgid="908784302972860853" name="abc_searchview_description_query">"Truy vấn tìm kiếm"</string>
+    <string msgid="5466662225065974044" name="abc_searchview_description_search">"Tìm kiếm"</string>
+    <string msgid="8203855622131699655" name="abc_searchview_description_submit">"Gửi truy vấn"</string>
+    <string msgid="3478748990613108725" name="abc_searchview_description_voice">"Tìm kiếm bằng giọng nói"</string>
+    <string msgid="2650565705514630347" name="abc_shareactionprovider_share_with">"Chia sẻ với"</string>
+    <string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"Chia sẻ với <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"Thu gọn"</string>
+    <string name="add">Thêm vào danh sách</string>
+    <string name="add_favorite_list">Danh Sách Bài Yêu Thích</string>
+    <string name="add_to_favorite">thêm vào danh sách yêu thích</string>
+    <string name="all_related_article">Những Bài Tìm Được</string>
+    <string name="app_name">Final Project</string>
+    <string name="applicationHelpMessage">Ứng dụng này có bốn hoạt động, bạn có thể chọn và tận hưởng từng hoạt động.</string>
+    <string name="article_detail">Thông tin về Bài Báo</string>
+    <string name="article_is_added_to_favorite">Bài báo đã được thêm vào danh sách yêu thích</string>
+    <string name="article_section">Phần</string>
+    <string name="article_title">Tiêu đề bài báo</string>
+    <string name="authorPhong">Lập trình viên: Phong Tran.</string>
+    <string name="author_ny">\@tác giả: Ny Nguyen - phiên bản cuối</string>
+    <string name="authors">Các lập trình viên:\nNy Nguyen,\nMansour Abraham,\nPhong Tran,\nTrang Nguyen.</string>
+    <string name="bbc_help_message">Hãy nhấn vào bất cứ mục nào để tiếp tục</string>
+    <string name="bbc_help_message_2">Bạn sẽ thấy chi tiết về mục ở trang kế tiếp</string>
+    <string name="bbc_help_title">Hướng dẫn sử dụng</string>
+    <string name="bbc_saved_button">Thêm vào danh sách</string>
+    <string name="bbc_view_button"> Xem danh sách</string>
+    <string name="cancel">Hủy</string>
+    <string name="cancelMessage">Bạn đã hủy bỏ thao tác xóa ảnh!</string>
+    <string name="clear">Clear ảnh</string>
+    <string name="close">Đóng</string>
+    <string name="date">Ngày chụp:</string>
+    <string name="delete">Xóa</string>
+    <string name="deleteConfirm">Ảnh đã được xóa!</string>
+    <string name="deleteMessage">Bạn có muốn xóa bức ảnh này?</string>
+    <string name="delete_article">Xóa khỏi danh sách</string>
+    <string name="delete_this_guardian_news">Xóa bài này phải không ?</string>
+    <string name="deleted_success">Xóa thành công</string>
+    <string name="emptyLat">Vui lòng nhập vĩ độ!</string>
+    <string name="emptyLon">Vui lòng nhập kinh độ!</string>
+    <string name="fav_message">Bạn có muốn xóa thư mục này ra khỏi danh sách yêu thích</string>
+    <string name="fav_no">Thư mục chưa được xóa bỏ</string>
+    <string name="fav_title">Xóa thư mục</string>
+    <string name="fav_yes">Thư mục đã được xóa bỏ </string>
+    <string name="favorite_title">DANH SÁCH BÀI YÊU THÍCH</string>
+    <string name="findImageFail">Không thể tìm thấy tọa độ của bạn!</string>
+    <string name="findImageFailMessage">Tọa độ của bạn không tồn tại. Vui lòng thử lại!</string>
+    <string name="getImage">Nhận hình ảnh</string>
+    <string name="getLat">Vui lòng nhập vĩ độ…</string>
+    <string name="getLon">Vui lòng nhập kinh độ…</string>
+    <string name="goBack">TRỞ LẠI TRANG DỰ ÁN</string>
+    <string name="goBackBtn">Quay lại</string>
+    <string name="headerString">TÌM KIẾM BÁO TRÊN THE GUARDIAN</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="help">Trợ Giúp</string>
+    <string name="helpMessage">Hoạt động này có thể chụp một ảnh vệ tinh của Trái Đất với tọa độ bạn đã nhập. Vui lòng nhập vào kinh độ và vĩ độ để nhận ảnh.\n\nSau khi đã nhận ảnh, bạn có thể lưu chúng vào một danh sách yêu thích và xem lại sau.</string>
+    <string name="helpTitle">Về ứng dụng</string>
+    <string name="imageInformation">Thông tin hình ảnh</string>
+    <string name="imageInformationMessage">Database ID: %s.\n\nẢnh được chụp vào ngày %s. Tọa độ của ảnh là %s x %s.</string>
+    <string name="item_alert_message">Bạn muốn thêm vào danh sách yêu thích?</string>
+    <string name="item_alert_title">Mục Yêu Thích</string>
+    <string name="item_click">Bạn đã nhấn vào mục</string>
+    <string name="lat">Vĩ độ:</string>
+    <string name="link">đường dẫn</string>
+    <string name="loadImage">Hình ảnh yêu thích</string>
+    <string name="lon">Kinh dộ:</string>
+    <string name="mainMenu">Menu chính</string>
+    <string name="main_title">TÌM KIẾM BÁO TRÊN THE GUARDIAN</string>
+    <string name="menu_article_search">Tìm Báo trang The Guardian</string>
+    <string name="menu_goBack">Trở về Trang Dự Án</string>
+    <string name="menu_main_page">Trang Chính</string>
+    <string name="name">Tên</string>
+    <string msgid="6301633601645100427" name="nav_app_bar_navigate_up_description">"Di chuyển lên"</string>
+    <string msgid="7456070600745802113" name="nav_app_bar_open_drawer_description">"Mở ngăn điều hướng"</string>
+    <string name="no">Không</string>
+    <string name="noImage">Bạn chưa nhận hình ảnh nào cả!</string>
+    <string name="noImageInList">Bạn chưa lưu hình ảnh nào cả!</string>
+    <string name="no_message">Bạn chọn không</string>
+    <string name="open">Mở</string>
+    <string name="otherActivities">Các hoạt động khác</string>
+    <string name="saveImage">Lưu hình ảnh</string>
+    <string name="saved">IẢnh đã được lưu!</string>
+    <string name="search">Tìm kiếm</string>
+    <string name="searchArticle">Trang Tìm Kiếm</string>
+    <string msgid="730395136688082741" name="search_menu_title">"Tìm kiếm"</string>
+    <string name="search_title">Vui lòng nhập vào từ khóa:</string>
+    <string name="section">Phần</string>
+    <string name="select">Vui lòng chọn một hoạt động</string>
+    <string name="share_keywords">từ khóa lần trước</string>
+    <string name="snackbar_no">Mục chưa được lưu</string>
+    <string name="snackbar_yes"> Mục đã được lưu</string>
+    <string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="system">Hệ thống</string>
+    <string name="title">Tiêu đề</string>
+    <string name="toBBCNews">BBC News</string>
+    <string name="toDayImage">Image Of The Day</string>
+    <string name="toEarthImage">Earth Image</string>
+    <string name="toGuardian">Guardian News</string>
+    <string name="undo">Hoàn tác</string>
+    <string name="version">Phiên bản: 1.0.0.</string>
+    <string name="welcome">Chào mừng đến với Final Project</string>
+    <string name="wrongCoordinates">Tọa độ bạn nhập không chính xác!</string>
+    <string name="yes">Có</string>
+    <string name="yes_message">Bạn chọn có</string>
+</resources>
